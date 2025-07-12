@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 24</title>
+    <link rel="stylesheet" href="./Book.css">
+</head>
+<body>
+    <header></header>
+    <section>
+        <div class="Content">
+            <img style="height: 45%; width: 80%; margin-left: 80px;" src="./static/sp36.jpg" alt="Code Snippet">
+            <br>
+            <h2>Changing Permissions - Symbolic Method </h2>
+            <br>
+            <ul>
+                <li>To change access modes: 
+                    <ul><li><b>chmod [-OPTION] ... mode[,mode] filel directory ... </b></li></ul>
+                </li>
+                <li>Mode includes:
+                    <ul>
+                        <li><b>u,g</b> or <b>o</b> for user, group and other</li>
+                        <li>+ - or = for grant, deny or set</li>
+                        <li><b>r , w</b> or <b>x</b> for read, write and execute</li>
+                    </ul>
+                </li>
+                <li>Options include: 
+                    <ul>
+                        <li><b>- R</b> Recursive</li>
+                        <li><b>-v</b> Verbose</li>
+                        <li><b>--reference</b> Reference  another  file for its mode </li>
+                    </ul>
+                </li>
+                <li>Examples:
+                    <ul>
+                        <li><b>chmod ugo+r file:</b> Grant read access to all for file </li>
+                        <li><b>chmod o-wx dir:</b> Deny write and execute to others for dir</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <div class="PrevPage">
+            <a href="./Page23.html">
+                <button type="button">Prev Page</button>
+            </a>
+        </div>
+        <div class="NextPage">
+            <a href="./Page25.html">
+                <button type="button">Next Page</button>
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

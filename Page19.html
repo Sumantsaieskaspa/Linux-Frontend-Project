@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 19</title>
+    <link rel="stylesheet" href="./Book.css">
+</head>
+<body>
+    <header>
+        <div class="Chapter">
+            <h1>5. Users & Groups</h1>
+        </div>
+    </header>
+    <section>
+        <div class="Content">
+            <h2><u>USERS</u>:-</h2>
+            <br>
+            <h3><u>Some Important Points related to Users:</u></h3>
+            <ul>
+                <li>Users and groups are used to control access to files and resources</li>
+                <li>Users login to the system by supplying their username and password</li>
+                <li>Every file on the system is owned by a user and associated with a group</li>
+                <li>Every process has an owner and group affiliation, and can only access the resources its owner or group can access.</li>
+                <li>Every user of the system is assigned a unique user ID number (the UID)</li>
+                <li>Users name and UID are stored in <b>/etc/passwd</b></li>
+                <li>User's password is stored in <b>/etc/shadow</b> in encrypted form</li>
+                <li>Users are assigned a <b>home directory</b> and a program that is run when they login <b>(Usually a shell)</b></li>
+                <li>Users cannot read, write or execute each other's files without permission</li>
+            </ul>
+            <br>
+            <h3><u>Types of User</u></h3>
+            <table>
+                <th>TYPE</th>
+                <th>EXAMPLE</th>
+                <th>USER ID (ID)</th>
+                <th>GROUP ID (GID)</th>
+                <th>HOME DIR</th>
+                <th>SHELL</th>
+                <tr>
+                    <td>ROOT</td>
+                    <td>root</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>/root</td>
+                    <td>/bin/bash</td>
+                </tr>
+                <tr>
+                    <td>REGULAR</td>
+                    <td>imran, vagrant</td>
+                    <td>1000 to 60000</td>
+                    <td>1000 to 60000</td>
+                    <td>/home/username</td>
+                    <td>/bin/bash</td>
+                </tr>
+                <tr>
+                    <td>SERVICE</td>
+                    <td>ftp, ssh, apache</td>
+                    <td>1 to 999</td>
+                    <td>1 to 999</td>
+                    <td>/var/ftp etc</td>
+                    <td>/sbin/nologi n</td>
+                </tr>
+            </table>
+            <br>
+            <h3><u>In Linux there are three types of users</u></h3>
+            <ol>
+                <li>Super user or root user :</li>
+                <p>Super user or the root user is the most powerful user. He is the administrator user.</p>
+                <li>System user :</li>
+                <p>System users are the users created by the softwares or applications. For example if we install Apache it will create a user apache. These kinds of users are known as system users.</p>
+                <li>Normal user :</li>
+                <p>Normal users are the users created by root user. They are normal users like Rahul, Musab etc. Only the root user has the permission to create or remove a user.</p>
+            </ol>
+        </div>
+    </section>
+    <footer>
+        <div class="PrevPage">
+            <a href="./Page18.html">
+                <button type="button">Prev Page</button>
+            </a>
+        </div>
+        <div class="NextPage">
+            <a href="./Page20.html">
+                <button type="button">Next Page</button>
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

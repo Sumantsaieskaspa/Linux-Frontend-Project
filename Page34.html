@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 34</title>
+    <link rel="stylesheet" href="./Book.css">
+</head>
+<body>
+    <header></header>
+    <section>
+        <div class="Content">
+            <table>
+                <th>Commands </th>
+                <th>Description </th>
+                <th>    </th>
+                <tr>
+                    <td>wget link </td>
+                    <td>to download file from link</td>
+                    <td>    </td>
+                </tr>
+                <tr>
+                    <td>curl link </td>
+                    <td>access file from link</td>
+                    <td>    </td>
+                </tr>
+                <tr>
+                    <td>curl link -o outputfile</td>
+                    <td>access file and store o/p to a file</td>
+                    <td>    </td>
+                </tr>
+                <tr>
+                    <td><mark>REDHAT RPM commands</mark></td>
+                    <td>    </td>
+                    <td>    </td>
+                </tr>
+                <tr>
+                    <td>rpm -ivh {rpm-file}</td>
+                    <td>Install the package</td>
+                    <td>rpm -ivh 
+                        mozilla-mail-1.7.5-17 
+                        .i586.rpm 
+                        rpm -ivh --test 
+                        mozilla-mail-1.7.5-17 
+                        .i586.rpm</td>
+                </tr>
+                <tr>
+                    <td>rpm -Uvh {rpm-file}</td>
+                    <td>Upgrade package</td>
+                    <td>rpm -Uvh 
+                        mozilla-mail-1.7.6-12 
+                        .i586.rpm 
+                        rpm -Uvh --test 
+                        mozilla-mail-1.7.6-12 
+                        .i586.rpm</td>
+                </tr>
+                <tr>
+                    <td>rpm -ev {package}</td>
+                    <td>Erase/remove/ an installed package</td>
+                    <td>rpm -ev mozilla-mail</td>
+                </tr>
+                <tr>
+                    <td>rpm -ev --nodeps {package}</td>
+                    <td>Erase/remove/ an 
+                        installed package 
+                        without checking for dependencies</td>
+                    <td>rpm -ev --nodeps mozilla-mail</td>
+                </tr>
+                <tr>
+                    <td>rpm -qa </td>
+                    <td>Display list all 
+                        installed packages </td>
+                    <td>rpm -qa 
+                        rpm -qa | less </td>
+                </tr>
+                <tr>
+                    <td>rpm -qi {package}</td>
+                    <td>Display installed 
+                        information along 
+                        with package version 
+                        and short description </td>
+                    <td>rpm -qi mozilla-mail </td>
+                </tr>
+                <tr>
+                    <td>rpm -qf 
+                        {/path/to/file}</td>
+                    <td>Find out what package 
+                        a file belongs to 
+                        i.e. find what 
+                        package owns the file </td>
+                    <td>rpm -qf /etc/passwd 
+                        rpm -qf /bin/bash</td>
+                </tr>
+                <tr>
+                    <td>rpm -qc 
+                        {pacakge-name} </td>
+                    <td>Display list of 
+                        configuration file(s) 
+                        for a package </td>
+                    <td>rpm -qc httpd </td>
+                </tr>
+                <tr>
+                    <td>rpm -qcf 
+                        {/path/to/file}</td>
+                    <td>Display list of 
+                        configuration files 
+                        for a command</td>
+                    <td>rpm -qcf 
+                        /usr/X11R6/bin/xeyes </td>
+                </tr>
+                <tr>
+                    <td>rpm -qa --last </td>
+                    <td>Display list of all 
+                        recently installed 
+                        RPMs</td>
+                    <td>rpm -qa --last 
+                        rpm -qa --last | less </td>
+                </tr>
+                <tr>
+                    <td>rpm -qpR {.rpm-file} 
+                        rpm -qR {package}</td>
+                    <td>Find out what 
+                        dependencies a rpm 
+                        file has</td>
+                    <td>rpm -qpR 
+                        mediawiki-1.4rc1-4.i5 
+                        86.rpm 
+                        rpm -qR bash</td>
+                </tr>
+                <tr>
+                    <td><mark>CentOS_8 Commands</mark></td>
+                    <td>    </td>
+                    <td>    </td>
+                </tr>
+                <tr>
+                    <td><mark>DNF commands cheatsheet</mark></td>
+                    <td><a href="https://www.linuxtechi.com/dnf-commandexamples-rpmmanagement-fedoralinux/">https://www.linuxtechi.com/dnf-commandexamples-rpmmanagement-fedoralinux/</a> </td>
+                    <td>    </td>
+                </tr>
+                <tr>
+                    <td>dnf --help</td>
+                    <td>Show the help </td>
+                    <td>    </td>
+                </tr>
+                <tr>
+                    <td>dnf search PACKAGE</td>
+                    <td>search from available 
+                        repositories </td>
+                    <td>    </td>
+                </tr>
+                <tr>
+                    <td>dnf install 
+                        PACKAGE -y </td>
+                    <td>To install the package </td>
+                    <td>    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <footer>
+        <div class="PrevPage">
+            <a href="./Page33.html">
+                <button type="button">Prev Page</button>
+            </a>
+        </div>
+        <div class="NextPage">
+            <a href="./Page35.html">
+                <button type="button">Next Page</button>
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
